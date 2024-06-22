@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
-git clone --bare git@github.com:krisfiction/dotfiles.git $HOME/.gitdotfiles
+git clone --bare https://github.com/krisfiction/dotfiles.git $HOME/.gitdotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 # define dotfiles alias locally since the dotfiles
 # aren't installed on the system yet
 function dotfiles {
@@ -10,7 +10,7 @@ function dotfiles {
 mkdir -p .gitdotfiles-backup
 dotfiles checkout
 if [ $? = 0 ]; then
-  echo "Checked out dotfiles from git@github.com:krisfiction/dotfiles.git";
+  echo "Checked out dotfiles from https://github.com/krisfiction/dotfiles.git";
   else
     echo "Moving existing dotfiles to ~/.gitdotfiles-backup";
     dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .gitdotfiles-backup/{}
