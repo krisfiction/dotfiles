@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 git clone --bare https://github.com/krisfiction/dotfiles.git $HOME/.gitdotfiles
 
+<<<<<<< HEAD
 #alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
+=======
+>>>>>>> fc7a37c (sync)
 # define dotfiles alias locally since the dotfiles aren't installed on the system yet
 function dotfiles {
    git --git-dir=$HOME/.gitdotfiles/ --work-tree=$HOME $@
