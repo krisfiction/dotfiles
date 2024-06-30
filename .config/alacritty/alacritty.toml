@@ -8,7 +8,14 @@ opacity = 0.75
 [font]
 size = 10.0
 
+[font.normal]
+family = "Terminess Nerd Font"
+style = "Regular"
+
 #[font.normal]
-#family = "Terminess Nerd Font"
+#family = "Source Code Pro"
 #style = "Regular"
+
+
+
 
