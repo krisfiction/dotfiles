@@ -8,7 +8,7 @@ function dotfiles {
 }
 
 # create a directory to backup existing dotfiles to
-mkdir -p .gitdotfiles-backup
+mkdir -p .gitdotfiles-backup && /
 dotfiles checkout
 if [ $? = 0 ]; then
   echo "Checked out dotfiles from github.com/krisfiction/dotfiles.git";
