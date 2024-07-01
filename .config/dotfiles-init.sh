@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-rm ~/.config/i3/config
-
 git clone --bare https://github.com/krisfiction/dotfiles.git $HOME/.gitdotfiles
 
 # define dotfiles alias
