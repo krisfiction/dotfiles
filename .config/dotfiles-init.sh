@@ -11,7 +11,7 @@ echo "this is a test"
 
 # create a directory to backup existing dotfiles to
 mkdir -p .gitdotfiles-backup
-mkdir .gitdotfiles-backup/i3
+mkdir .gitdotfiles-backup/.config/i3
 dotfiles checkout
 if [ $? = 0 ]; then
   echo "Checked out dotfiles from github.com/krisfiction/dotfiles.git";
