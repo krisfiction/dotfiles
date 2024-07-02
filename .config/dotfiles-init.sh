@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "last update: 2024-07-01"
+
 git clone --bare https://github.com/krisfiction/dotfiles.git $HOME/.gitdotfiles
 
 # define dotfiles alias
@@ -7,11 +9,8 @@ function dotfiles {
    git --git-dir=$HOME/.gitdotfiles/ --work-tree=$HOME $@
 }
 
-echo "this is a test"
-
 # create a directory to backup existing dotfiles to
 mkdir -p .gitdotfiles-backup
-mkdir .gitdotfiles-backup/.config/i3
 dotfiles checkout
 if [ $? = 0 ]; then
   echo "Checked out dotfiles from github.com/krisfiction/dotfiles.git";
