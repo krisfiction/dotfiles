@@ -10,6 +10,11 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+alias upgrade-posh='curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin'
+
+alias reload='source ~/.bashrc'
+
+
 #PS1='[\u@\h \W]\$ '
 PS1='┌──(\u@\h)-[\w]\n└─\$'
 
@@ -17,6 +22,8 @@ PS1='┌──(\u@\h)-[\w]\n└─\$'
 
 #export TERM=xterm-256color
 
+export VISUAL=nvim;
+export EDITOR=nvim;
 
 
 
